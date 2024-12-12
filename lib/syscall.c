@@ -1,7 +1,7 @@
 #include "syscall.h"
 
-int syscall_open(const char* path){
-    return __syscall(SYSCALL_POSIX_OPEN,path);
+int syscall_open(const char* path,int flags){
+    return __syscall(SYSCALL_POSIX_OPEN,path,flags);
 }
 
 int syscall_close(int fd){

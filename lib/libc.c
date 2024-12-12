@@ -49,7 +49,7 @@ int printf(const char *fmt, ...) {
 }
 
 int open(const char * pathname,int flags){
-    return syscall_open(pathname);
+    return syscall_open(pathname,flags);
 }
 
 int close(int fd){

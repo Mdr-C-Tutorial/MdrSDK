@@ -107,6 +107,6 @@ typedef ssize_t          isize;
 #define __syscall(id, ...)                                                                         \
   __syscall_concat(__syscall, __syscall_argn(__VA_ARGS__))(id, ##__VA_ARGS__)
 
-int syscall_open(const char* path);
+int syscall_open(const char* path,int flags);
 int syscall_close(int fd);
 ssize_t syscall_read(int fd,void * buf ,size_t count);
