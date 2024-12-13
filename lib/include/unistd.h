@@ -1,5 +1,7 @@
 #pragma once
 
+#include "ctype.h"
+
 typedef enum oflags {
     O_RDONLY,
     O_WRONLY,
@@ -10,3 +12,4 @@ typedef enum oflags {
 ssize_t read(int fd,void * buf ,size_t count);
 int close(int fd);
 int open(const char * pathname,int flags);
+void _exit(int code);

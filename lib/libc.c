@@ -48,17 +48,6 @@ int printf(const char *fmt, ...) {
     return rets;
 }
 
-int open(const char * pathname,int flags){
-    return syscall_open(pathname,flags);
-}
-
-int close(int fd){
-    return syscall_close(fd);
-}
-ssize_t read(int fd,void * buf ,size_t count){
-    return syscall_read(fd,buf,count);
-}
-
 int atoi(const char **s) {
     int i = 0;
 

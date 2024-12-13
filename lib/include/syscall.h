@@ -18,6 +18,7 @@ typedef ssize_t          isize;
 #define SYSCALL_POSIX_OPEN 8
 #define SYSCALL_POSIX_CLOSE 9
 #define SYSCALL_POSIX_READ 10
+#define SYSCALL_POSIX_SIZEX 11
 
 #define __syscall0(id)                                                                             \
   ({                                                                                               \
