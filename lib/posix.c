@@ -17,6 +17,11 @@ ssize_t read(int fd,void * buf ,size_t count){
     return syscall_read(fd,buf,count);
 }
 
+int write(int fd, const void *msg, int len){
+    return syscall_write(fd,msg,len);
+}
+
+// 扩展函数
 int size(int fd){
     return __syscall(SYSCALL_POSIX_SIZEX,fd);
 }

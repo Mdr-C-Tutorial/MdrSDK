@@ -26,6 +26,7 @@ void *memcpy(void *s, const void *ct, size_t n);
 int memcmp(const void *a_, const void *b_, uint32_t size);
 void *memset(void *s, int c, size_t n);
 void *memmove(void *dest, const void *src, size_t num);
+void *memchr(const void *s, int c, size_t n);
 
 // String search functions
 const char *strstr(const char *str1, const char *str2);

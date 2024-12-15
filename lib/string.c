@@ -114,6 +114,19 @@ void *memmove(void *dest, const void *src, size_t num) {
     return ret;
 }
 
+void *memchr(const void *s, int c, size_t n) {
+    unsigned char *ptr = (unsigned char *)s;
+    unsigned char ch = (unsigned char)c;
+
+    for (size_t i = 0; i < n; i++) {
+        if (ptr[i] == ch) {
+            return &ptr[i];
+        }
+    }
+
+    return NULL;
+}
+
 char *strncat(char *dest, const char *src, unsigned long long count) {
     if (dest == 0 || src == 0)
         return 0;
